@@ -35,7 +35,7 @@ export default defineConfig(
             }
         },
         plugins: {
-            new Handlebars{
+            Handlebars: {
                 partialDirectory: "src/components"
             }
         }
