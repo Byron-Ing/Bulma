@@ -34,10 +34,10 @@ export default defineConfig(
                 input: obtenerHtmlFiles()
             }
         },
-        plugins: {
-            Handlebars: {
-                partialDirectory: "src/components"
-            }
-        }
+        plugins: [
+            Handlebars({
+                partialDirectory: resolve(__dirname, "src/components")
+            })
+        ]
     }
 );
